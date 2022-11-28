@@ -1,7 +1,7 @@
 import contacts from './modules/contact.js';
 import menu from './modules/menu';
 
-let container = document.createElement('div');
+let container = document.getElementById('content');
 
 const html = `
     <nav class='flex space-between'>
