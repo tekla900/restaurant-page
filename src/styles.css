@@ -13,6 +13,24 @@ h1 {
     color: #101A24;
 }
 
+h2 {
+    /* font-family: 'David Libre'; */
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 108%;
+    text-align: center;
+    color: #101A24;
+}
+
+h4 {
+    /* font-family: 'David Libre'; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #101A24;
+}
+
 p {
     /* font-family: 'Inter'; */
     font-style: normal;
@@ -20,20 +38,83 @@ p {
     font-size: 16px;
     line-height: 181%; 
     color: #5C6574;
+    width: 376px;
 }
 
 /* button */
+button {
+    width: 167px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 25px 2.5px;
+    /* font-family: 'David Libre'; */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 145%; 
+    color: #FFFFFF;
+}
 
+.orange {
+    background-color: #EA6D27;
+}
 
+.black {
+    background-color: #101A24;
+}
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .space-between {
     justify-content: space-between;
 }
-/* 
-/* li {
+
+.space-around {
+    justify-content: space-around;
+}
+
+.center {
+    justify-content: center;
+}
+
+.column-center {
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    gap: 2rem;
+}
+
+li {
     list-style: none;
-} */ */
+}
+
+.menu {
+    gap: 50px;
+    margin-top: 170px;
+}
+
+.menu-item {
+    width: 265px;
+    height: 309px;
+    /* background: pink; */
+    display: flex;
+    gap: 20px;
+    border-radius: 25px 2.5px;
+    position: relative;
+}
+
+.menu-item p {
+    width: 225px;
+    text-align: center;
+}
+
+.meal {
+    position: absolute;
+    top: -120px;
+}

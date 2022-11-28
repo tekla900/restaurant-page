@@ -6,13 +6,14 @@ let container = document.getElementById('content');
 const html = `
     <nav class='flex space-between'>
         <div id='logo'>Restaurant</div>
-        <ul class='flex'>
+        <ul class='flex space-between'>
             <li><a id='menu-link'>Menu</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">About</a></li>
             <li><a id='contacts-link'>Contact</a></li>
         </ul>
+        <button type='button' class='orange'>Book a table</button>
     </nav>
 `;
 
