@@ -18,8 +18,9 @@ h2 {
     font-weight: 700;
     font-size: 60px;
     line-height: 108%;
-    text-align: center;
+    text-align: left;
     color: #101A24;
+    max-width: 520px;
 }
 
 h4 {
@@ -66,7 +67,7 @@ button {
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .space-between {
@@ -81,9 +82,19 @@ button {
     justify-content: center;
 }
 
+/* .center: {
+    display: grid;
+    place-items: center;
+} */
+
 .column-center {
     flex-direction: column;
     align-items: center;
+}
+
+.column-justify-center {
+    flex-direction: column;
+    justify-content: center;
 }
 
 ul {
@@ -117,4 +128,25 @@ li {
 .meal {
     position: absolute;
     top: -120px;
+}
+
+
+.price {
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #101A24;
+    /* font-family: 'Inter'; */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #FFFFFF;
+    /*  */
+    display: grid;
+    place-items: center;
+    /*  */
 }
