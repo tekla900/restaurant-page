@@ -24,6 +24,16 @@ h2 {
     max-width: 520px;
 }
 
+h3 {
+    /* font-family: 'David Libre'; */
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 116%;
+    text-align: center;
+    color: #FFFFFF;
+    width: min(804px, 85%);
+}
+
 h4 {
     /* font-family: 'David Libre'; */
     font-weight: 700;
@@ -44,9 +54,19 @@ p {
     text-align: center;
 }
 
+input {
+    /* width: min(667px, 95%); */
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    padding: 28px 17px;
+    border: none;
+    margin: 0 auto;
+}
+
 /* button */
 button {
-    width: 167px;
+    width: 160px;
     height: 64px;
     border: none;
     cursor: pointer;
@@ -69,6 +89,10 @@ button {
 
 .btn-container {
     gap: 25px;
+}
+
+.relative {
+    position: relative;
 }
 
 .flex {
@@ -162,6 +186,8 @@ a {
 #interior {
     position: relative;
     max-width: 100%;
+    /* 1000px-ze metze kargadaa */
+    min-width: 300px;
     height: auto;
     border-radius: 150px 35px;
 }
@@ -246,3 +272,27 @@ a {
     }
 }
 
+
+/* PROMO SECTION */
+#promo {
+    background-image: url('../assets/promo.png');
+    width: 80vw;
+    height: 407px;
+    margin: 130px auto;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+}
+
+#promo div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#subscribe {
+    border-radius: 10px;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+    z-index: 2;
+}
