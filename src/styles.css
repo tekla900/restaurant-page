@@ -97,7 +97,6 @@ button {
 
 .flex {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .wrap {
@@ -164,8 +163,7 @@ a {
 /* HOME SECTION */
 .landing {
     gap: 100px;
-    margin-bottom: 150px;
-    margin-top: 200px;
+    margin: 150px 0;
 }
 
 .landing p {
@@ -174,23 +172,24 @@ a {
     text-align: left;
 }
 
-#absolute {
-    position: absolute;
-    top: 200px;
-    z-index: 2;
-    right: 150px;
-    width: 250px;
-    height: auto;
-}
-
 #interior {
-    position: relative;
     max-width: 100%;
     /* 1000px-ze metze kargadaa */
     min-width: 300px;
     height: auto;
     border-radius: 150px 35px;
 }
+
+#absolute {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    left: -30%;
+    width: 250px;
+    height: auto;
+}
+
+
 
 .menu {
     gap: 50px;
@@ -239,10 +238,12 @@ a {
 
 #welcome {
     margin: 150px auto;
+    gap: 40px;
 }
 
 #welcome p {
     text-align: left;
+    margin: 30px 0;
 }
 
 #main-pic {

@@ -8,7 +8,7 @@ const mainSection = `
                 <button type="button" class='orange'>Book a table </button>
             </div>
         </div>
-        <div class="landing-photos">
+        <div class="landing-photos relative">
             <img src="../assets/dish-2 1.png" id='absolute'>
             <img src="../assets/interior.png" id='interior'>
         </div>
