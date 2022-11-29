@@ -1,10 +1,11 @@
 const menu = `
-    <section class='flex-column tab' id='menu'>
+    <section class='tab' id='menu'>
+    <div class='flex-column'>
         <div class='flex column-center'>
             <h2>Our Special Dishes</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>    
         </div>
-        <div class="menu flex space-around">
+        <div class="menu flex space-around wrap">
             <div class="menu-item column-center center">
                 <img src="../assets/dish-1 1.png" class='meal'>
                 <div class='price'>$12</div>
@@ -30,12 +31,12 @@ const menu = `
                 <p>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class='flex space-around'>
+    <div class='flex space-around' id='welcome'>
 
         <div>
-            <img src='../assets/dish-2 2.png' />
+            <img src='../assets/dish-2 2.png' id='main-pic'/>
         </div>
 
         <div class='flex column-justify-center'>
@@ -46,6 +47,7 @@ const menu = `
                 <button type="button" class='orange'>Book a table </button>
             </div>
         </div>
+    </div>
     </section>
 `;
 

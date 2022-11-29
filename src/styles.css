@@ -11,6 +11,7 @@ h1 {
     font-size: 70px;
     line-height: 103%;
     color: #101A24;
+    width: 512px;
 }
 
 h2 {
@@ -40,6 +41,7 @@ p {
     line-height: 181%; 
     color: #5C6574;
     width: 376px;
+    text-align: center;
 }
 
 /* button */
@@ -65,9 +67,17 @@ button {
     background-color: #101A24;
 }
 
+.btn-container {
+    gap: 25px;
+}
+
 .flex {
     display: flex;
     /* flex-wrap: wrap; */
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .space-between {
@@ -80,6 +90,10 @@ button {
 
 .center {
     justify-content: center;
+}
+
+.align-center {
+    align-items: center;
 }
 
 /* .center: {
@@ -105,6 +119,53 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    /* font-family: 'Inter'; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 181%;
+    color: #101A24;
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 30px;
+    /* font-family: 'Inter'; */
+    text-transform: lowercase;
+    color: #101A24;
+    font-weight: 700;
+}
+
+/* HOME SECTION */
+.landing {
+    gap: 100px;
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+
+.landing p {
+    margin-top: 70px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+#absolute {
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    right: 150px;
+    width: 250px;
+    height: auto;
+}
+
+#interior {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border-radius: 150px 35px;
+}
+
 .menu {
     gap: 50px;
     margin-top: 170px;
@@ -122,7 +183,6 @@ li {
 
 .menu-item p {
     width: 225px;
-    text-align: center;
 }
 
 .meal {
@@ -150,3 +210,39 @@ li {
     place-items: center;
     /*  */
 }
+
+#welcome {
+    margin: 150px auto;
+}
+
+#welcome p {
+    text-align: left;
+}
+
+#main-pic {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    #welcome {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #welcome div {
+        align-items: center;
+    }
+
+    #welcome div h2, #welcome p {
+        text-align: center;
+    }
+
+
+    #main-pic {
+        width: 400px;
+        height: auto;
+    }
+}
+
