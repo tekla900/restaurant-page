@@ -1,7 +1,7 @@
-import contacts from './modules/contact.js';
 import menu from './modules/menu';
 import mainSection from './modules/homepage';
 import promo from './modules/promo';
+import footer from './modules/footer';
 
 let container = document.getElementById('content');
 
@@ -13,7 +13,6 @@ const html = `
             <li><a id='menu-link'>Menu</a></li>
             <li><a href="#">Events</a></li>
             <li><a id='promo-link'>Subscribe</a></li>
-            <li><a id='contacts-link'>Contact</a></li>
         </ul>
         <button type='button' class='orange'>Book a table</button>
     </nav>
@@ -23,17 +22,15 @@ const html = `
 function addEvents() {
     let homeBtn = document.getElementById('home-link');
     let menuBtn = document.getElementById('menu-link');
-    let contactBtn = document.getElementById('contacts-link');
     let promoBtn = document.getElementById('promo-link');
 
     homeBtn.addEventListener('click', () => openTab('home'));
     menuBtn.addEventListener('click', () => openTab('menu'));
-    contactBtn.addEventListener('click', () => openTab('contact')); 
     promoBtn.addEventListener('click', () => openTab('promo'));   
 }
 
-function renderHomePage(base, mainSection, menu, promo, contacts) {
-    container.innerHTML = base + mainSection + menu + promo + contacts;
+function renderHomePage(base, mainSection, menu, promo) {
+    container.innerHTML = base + mainSection + menu + promo + footer;
 }
 
 
@@ -53,7 +50,7 @@ function openTab(tabName) {
 }
 
 function init() {
-    renderHomePage(html, mainSection, menu, promo, contacts);
+    renderHomePage(html, mainSection, menu, promo, footer);
     addEvents();
 }
 
