@@ -314,6 +314,49 @@ a {
     }
 }
 
+/* MEET CHEF SECTION */
+#chefs p {
+    text-align: left;   
+}
+
+.main-p {
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.container {
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.child {
+    gap: 10px;
+}
+
+.bck-span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#chef-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    #chefs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
 
 /* PROMO SECTION */
 #promo {
